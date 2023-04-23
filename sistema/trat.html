@@ -9,7 +9,7 @@
     <title>Ficha Hidrica</title>
 </head>
 <body>
-    <nav class="navbar bg-primary navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar bg-primary navbar-expand-lg" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Fichas</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,7 +18,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link" aria-current="page" href="#">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./administrativa.html">Administrativa</a>
@@ -27,13 +27,13 @@
                 <a class="nav-link" href="./directiva.html">Directiva</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./abastecimiento.html">abastecimiento</a>
+                <a class="nav-link" href="./abastecimiento.html">Abastecimiento</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="./trat.html">Trat & reg</a>
+                <a class="nav-link active" href="./trat.html">Trat & Reg</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./dis.html">Dis & tarifa</a>
+                <a class="nav-link" href="./dis.html">Dis & Tarifa</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./contabilidad.html">Contabilidad</a>
@@ -46,7 +46,282 @@
         </div>
       </nav>
     <div class = "container">
+      <form class="row g-3">
         
+        <h1>Información sistema de Tratamiento</h1>
+          <div class="col-12">
+            <h3>Tipo</h3>
+          </div>
+            <div class="col-4">
+              <label for="inputAddress" class="form-label">Cloración</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="">
+            </div>
+            <div class="col-4">
+              <label for="inputAddress" class="form-label">Ozono o UV</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="">
+            </div>
+            <div class="col-4">
+              <label for="inputAddress" class="form-label">Filtro Hierro</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Otro Filtro</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="">
+            </div>
+
+            <div class="col-12">
+              <h3>Tipo Desinfección</h3>
+            </div>
+              <div class="col-6">
+                <label for="inputAddress" class="form-label">Bomba Clora</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="">
+              </div>
+              <div class="col-6">
+                <label for="inputAddress" class="form-label">Gas Cloro</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="">
+              </div>
+              <div class="col-6">
+                <label for="inputAddress" class="form-label">Pastillas Cloro</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="">
+              </div>
+              <div class="col-6">
+                <label for="inputAddress" class="form-label">Generador 03 o UV</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="">
+              </div>
+
+
+            <h3>Estado</h3>
+            <div class="col-md-6">
+              <label class="form-label">General</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected></option>
+                <option value="1">Bién</option>
+                <option value="2">Regular</option>
+                <option value="3">Mal</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Desinfección</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected></option>
+                <option value="1">Bién</option>
+                <option value="2">Regular</option>
+                <option value="3">Mal</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Filtro Hierro</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected></option>
+                <option value="1">Bién</option>
+                <option value="2">Regular</option>
+                <option value="3">Mal</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Otro Filtro</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected></option>
+                <option value="1">Bién</option>
+                <option value="2">Regular</option>
+                <option value="3">Mal</option>
+              </select>
+            </div>
+
+            <div class="col-12">
+              <label for="formFileMultiple" class="form-label">Adjuntar Fotos</label>
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+            </div>
+
+          <h1>Información sistema de Regulación</h1>
+          <h3>Estanque N°1</h3>
+            <div class="col-12">
+              <h5>Tipo</h5>
+            </div>
+            <div class="col-3">
+              <label for="inputAddress" class="form-label">Semi Enterreado</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="">
+            </div>
+            <div class="col-3">
+              <label for="inputAddress" class="form-label">Elevado</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="">
+            </div>
+            <div class="col-3">
+              <label for="inputAddress" class="form-label">Reg. con Hidropack</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="">
+            </div>
+            <div class="col-3">
+              <label for="inputAddress" class="form-label">Sin reg. con Hidropack</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="">
+            </div>
+
+            <div class="col-12">
+              <h5>Material</h5>
+            </div>
+            <div class="col-3">
+              <label for="inputAddress" class="form-label">Acero Carbono</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="">
+            </div>
+            <div class="col-3">
+              <label for="inputAddress" class="form-label">Hormigon Armado</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="">
+            </div>
+            <div class="col-3">
+              <label for="inputAddress" class="form-label">Fibra de Vidrio</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="">
+            </div>
+            <div class="col-3">
+              <label for="inputAddress" class="form-label">Roto Moldeo (UV)</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="">
+            </div>
+
+            <h5>Estado</h5>
+            <div class="col-md-3">
+              <label class="form-label">General</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected></option>
+                <option value="1">Bién</option>
+                <option value="2">Regular</option>
+                <option value="3">Mal</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label class="form-label">Estanque</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected></option>
+                <option value="1">Bién</option>
+                <option value="2">Regular</option>
+                <option value="3">Mal</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label class="form-label">Regulación</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected></option>
+                <option value="1">Bién</option>
+                <option value="2">Regular</option>
+                <option value="3">Mal</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label class="form-label">VOL [m3]</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected></option>
+                <option value="1">Bién</option>
+                <option value="2">Regular</option>
+                <option value="3">Mal</option>
+              </select>
+            </div>
+
+              <div class="col-4">
+                <label for="inputAddress" class="form-label">Fecha de Instalación</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="">
+              </div>
+              <div class="col-4">
+                <label for="inputAddress" class="form-label">Coordenadas</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="">
+              </div>
+              <div class="col-4">
+                <label for="formFileMultiple" class="form-label">Adjuntar Fotos</label>
+                <input class="form-control" type="file" id="formFileMultiple" multiple>
+              </div>
+
+              <h3>Estanque N°2</h3>
+
+              <div class="col-12">
+                <h5>Tipo</h5>
+              </div>
+              <div class="col-3">
+                <label for="inputAddress" class="form-label">Semi Enterreado</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="">
+              </div>
+              <div class="col-3">
+                <label for="inputAddress" class="form-label">Elevado</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="">
+              </div>
+              <div class="col-3">
+                <label for="inputAddress" class="form-label">Reg. con Hidropack</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="">
+              </div>
+              <div class="col-3">
+                <label for="inputAddress" class="form-label">Sin reg. con Hidropack</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="">
+              </div>
+  
+              <div class="col-12">
+                <h5>Material</h5>
+              </div>
+              <div class="col-3">
+                <label for="inputAddress" class="form-label">Acero Carbono</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="">
+              </div>
+              <div class="col-3">
+                <label for="inputAddress" class="form-label">Hormigon Armado</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="">
+              </div>
+              <div class="col-3">
+                <label for="inputAddress" class="form-label">Fibra de Vidrio</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="">
+              </div>
+              <div class="col-3">
+                <label for="inputAddress" class="form-label">Roto Moldeo (UV)</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="">
+              </div>
+  
+              <h5>Estado</h5>
+              <div class="col-md-3">
+                <label class="form-label">General</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected></option>
+                  <option value="1">Bién</option>
+                  <option value="2">Regular</option>
+                  <option value="3">Mal</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label class="form-label">Estanque</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected></option>
+                  <option value="1">Bién</option>
+                  <option value="2">Regular</option>
+                  <option value="3">Mal</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label class="form-label">Regulación</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected></option>
+                  <option value="1">Bién</option>
+                  <option value="2">Regular</option>
+                  <option value="3">Mal</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label class="form-label">VOL [m3]</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected></option>
+                  <option value="1">Bién</option>
+                  <option value="2">Regular</option>
+                  <option value="3">Mal</option>
+                </select>
+              </div>
+  
+                <div class="col-4">
+                  <label for="inputAddress" class="form-label">Fecha de Instalación</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="">
+                </div>
+                <div class="col-4">
+                  <label for="inputAddress" class="form-label">Coordenadas</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="">
+                </div>
+                <div class="col-4">
+                  <label for="formFileMultiple" class="form-label">Adjuntar Fotos</label>
+                  <input class="form-control" type="file" id="formFileMultiple" multiple>
+                </div>
+
+            
+      </form>
+      <br>
     </div>
 
 
